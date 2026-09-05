@@ -39,6 +39,26 @@
 
 脚本参数可用 `python scripts/<脚本名> --help` 查看。详细流程由 [SKILL.md](SKILL.md) 及 `references/` 中的按需说明定义。
 
+## 维护者如何更新
+
+在本地仓库目录中修改并测试后，依次执行：
+
+```powershell
+git status
+git add .
+git commit -m "docs: describe the change"
+git push
+```
+
+第一次在新电脑上使用时，先安装 [GitHub CLI](https://cli.github.com/)，运行 `gh auth login` 登录，再执行：
+
+```powershell
+git clone https://github.com/Acipenser-ruthenus/academic-paper-to-wechat.git
+cd academic-paper-to-wechat
+```
+
+如果 GitHub 阻止推送并提示会公开私人邮箱，请不要关闭隐私保护。到 GitHub 的 Email 设置中复制官方 `noreply` 地址，然后仅在该仓库内执行 `git config user.email "你的-noreply-地址"`。
+
 ## 隐私与版权
 
 不要把未公开论文、作者私人邮箱、浏览器数据、访问令牌或具体项目生成稿提交到公共仓库。公开使用论文图片前，请确认论文与期刊许可。
