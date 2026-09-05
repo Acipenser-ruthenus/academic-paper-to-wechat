@@ -1,0 +1,10 @@
+{
+  "dpi": 240,
+  "regions": [
+    {
+      "page": 1,
+      "name": "title-and-authors",
+      "bbox": [45, 45, 550, 260]
+    }
+  ]
+}

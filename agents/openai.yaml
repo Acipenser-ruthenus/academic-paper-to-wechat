@@ -1,0 +1,4 @@
+interface:
+  display_name: "论文 PDF 转公众号推文"
+  short_description: "把学术论文整理为可复制到微信公众号的图文稿"
+  default_prompt: "使用 $academic-paper-to-wechat 将这篇论文 PDF 整理为微信公众号图文稿。"
