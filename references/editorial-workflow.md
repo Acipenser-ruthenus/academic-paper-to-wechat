@@ -38,6 +38,7 @@ Match only conventions visible in the supplied reference. Do not assume that eve
 - Explain arrows such as ↑ and ↓ the first time metrics appear.
 - Prefer paragraphs with varied rhythm over repetitive “首先/其次/最后” scaffolding.
 - Keep technical names and casing consistent with the paper.
+- House wording for this account: label the corresponding author as 通讯作者, never 通信作者, in the `作者` metadata line and anywhere else in the Chinese copy.
 
 When `humanizer-zh` is available and requested, use it only after the factual draft is stable. Recheck every number and technical relationship afterward.
 
