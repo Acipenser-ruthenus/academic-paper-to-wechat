@@ -3,6 +3,7 @@
 ## Content
 
 - English title, author order, affiliations, correspondence marks, venue, year, DOI, and citation match the source.
+- The publication-timeline note sits directly under the metadata block, keeps the journal's English date labels, and reproduces the front-page dates without translating or inferring any stage.
 - Every number can be traced to the cited figure, table, or passage.
 - Dataset names, metric arrows, best/second-best markers, and method names are explained correctly.
 - Chinese author names are authoritative, not guessed.

@@ -9,6 +9,7 @@ Resolve these fields before publication:
 - paper title and preferred public-facing Chinese title;
 - author order, affiliations, correspondence marks, and contact details;
 - venue, publication status, year, DOI, and full citation;
+- publication timeline exactly as printed on the paper front page (Received / Revised / Accepted / Available online, or IEEE's "Date of publication" and "date of current version"), with no stage inferred or back-calculated;
 - problem definition, method novelty, training/inference design;
 - datasets, baselines, metrics, best/second-best conventions;
 - limitations or conditions that narrow a claim.
@@ -39,6 +40,16 @@ Match only conventions visible in the supplied reference. Do not assume that eve
 - Prefer paragraphs with varied rhythm over repetitive “首先/其次/最后” scaffolding.
 - Keep technical names and casing consistent with the paper.
 - House wording for this account: label the corresponding author as 通讯作者, never 通信作者, in the `作者` metadata line and anywhere else in the Chinese copy.
+- House wording for the publication-timeline note: place one note directly under the metadata block (作者／单位／邮箱／发表期刊／DOI／引用) and state the dates in the journal's own English labels, in this form:
+
+  ```
+  卷期页码与在线发表日期请以期刊正式出版信息为准（Received 25 February 2026；Revised 7 July 2026；Accepted 21 July 2026；Available online 29 July 2026）。
+  ```
+
+  - Keep the English labels as printed (Received / Revised / Accepted / Available online; for IEEE letters the front page uses "Date of publication" and "date of current version", so map the publication date to Available online and, if useful, add the current-version date the same way).
+  - Limit the entries to the stages the paper actually prints. Do not invent an Accepted date when only Received and Available online are given, and do not translate the labels into Chinese (收稿／修回／录用／上线).
+  - Separate entries with a full-width semicolon `；` and wrap the whole list in full-width parentheses `（）`.
+  - Drop the 卷期页码 caveat only when the user says the paper needs no such caveat; by default keep the sentence as written above even for articles whose volume and pages are already fixed.
 
 When `humanizer-zh` is available and requested, use it only after the factual draft is stable. Recheck every number and technical relationship afterward.
 
