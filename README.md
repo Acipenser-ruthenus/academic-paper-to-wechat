@@ -63,6 +63,25 @@ cd academic-paper-to-wechat
 
 不要把未公开论文、作者私人邮箱、浏览器数据、访问令牌或具体项目生成稿提交到公共仓库。公开使用论文图片前，请确认论文与期刊许可。
 
+## 关于
+
+<p align="center">
+  <img src="assets/lab-logo.png" width="150" alt="Mathematics × Multimedia Lab (ΣM² Lab) logo">
+</p>
+
+本工具产出的图文稿发布在微信公众号 **数学与多媒体交叉团队**（Mathematics × Multimedia Lab，简称 ΣM² Lab）。
+公众号以课题组论文解读为主，覆盖多媒体信号处理与三维视觉方向。仓库里的事实核对表、图区裁剪坐标法和复制页生成规范，都来自这几篇稿件在实际排版中反复踩出来的需求。
+
+已发布文章示例：
+
+- [UPhy-Diff：文本引导的多模态物理扩散水下图像增强（IEEE TCSVT）](https://mp.weixin.qq.com/s/IuC8FlKzRvDTLSwhQ3KaWg)
+- [DFGNeRF：深度融合门控的神经辐射场水印方法（IEEE TMM）](https://mp.weixin.qq.com/s/SHX1CMRZeJPcB_om2wyIwQ)
+
+<p align="center">
+  <img src="assets/wechat-qrcode.png" width="150" alt="微信公众号「数学与多媒体交叉团队」二维码"><br>
+  <sub>公众号二维码</sub>
+</p>
+
 ## License
 
 MIT
