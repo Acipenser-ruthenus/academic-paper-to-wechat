@@ -7,6 +7,7 @@
 - Every number can be traced to the cited figure, table, or passage.
 - Dataset names, metric arrows, best/second-best markers, and method names are explained correctly.
 - Chinese author names are authoritative, not guessed.
+- Two or three headline candidates are supplied, each following the account's `<abbreviation> | <model>：<rendering>` form and staying within 64 characters.
 - Claims preserve conditions, exceptions, and limitations.
 - No drafting placeholders, private notes, or unsupported “state-of-the-art” claims remain.
 
@@ -23,6 +24,7 @@
 - The output opens offline and has no unintended external image/font dependencies.
 - All intended images use `data:` URLs when embedding is enabled.
 - The copy action selects only `article#article`.
+- Headline candidates sit above `article#article`, are absent from the copied body, and each shows a character count and a working copy button; a paste into a rich-text surface must not carry them along.
 - Desktop and narrow/mobile views have no horizontal overflow.
 - Headings, body size, line height, color, margins, captions, and notes resemble the supplied reference.
 - A test paste into a disposable rich-text surface preserves headings and images when the environment permits it.

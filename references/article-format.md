@@ -6,6 +6,8 @@ The builder accepts UTF-8 Markdown with optional YAML-like front matter.
 ---
 browser-title: 示例论文公众号图文复制版
 accent-color: "#00b0f0"
+title-candidate: J TEST | DemoNet：一种用于水下增强的示例方法
+title-candidate: DEMONET | DemoNet：可学习激活驱动的水下增强
 ---
 
 # English Paper Title
@@ -28,6 +30,13 @@ accent-color: "#00b0f0"
 
 {{image:figures/framework.png|图 1 方法总体框架（论文图 2）}}
 ```
+
+Front matter keys:
+
+- `browser-title` — the HTML tab title only. It is **not** the WeChat headline and never appears in the article body.
+- `accent-color` — six-digit hex, drives the heading colour.
+- `title-candidate` — repeatable. Each line adds one WeChat headline candidate. The builder renders the list above `article#article` with a character count and a per-item copy button; the list is excluded from the copied body and from print. `title-candidates` is accepted as an alias, but write one candidate per line rather than packing several into one value.
+
 
 Supported constructs are headings `#` to `###`, paragraphs, unordered lists, `**bold**`, `*italic*`, Markdown links, notes, and local images. Image paths are resolved relative to the Markdown file.
 

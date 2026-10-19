@@ -23,15 +23,16 @@ Produce a publish-ready draft plus a self-contained HTML page whose article body
 4. Select only figures that help explain the paper. Preserve original figure/table numbering in captions. Render or crop equations and complex tables as images when editable HTML would be fragile. Use [scripts/render_pdf.py](scripts/render_pdf.py) and [scripts/crop_pdf_regions.py](scripts/crop_pdf_regions.py) when suitable; read [references/crop-manifest.md](references/crop-manifest.md) before cropping.
 5. Draft in Chinese using the structure justified by the source and reference article. If `humanizer-zh` is available and the user wants native Chinese or reduced AI tone, apply it after factual drafting and before final layout. It may improve phrasing but must not change technical claims or numbers.
 6. Start from [assets/article-template.md](assets/article-template.md). Read [references/article-format.md](references/article-format.md), then run [scripts/build_wechat_html.py](scripts/build_wechat_html.py) to create one HTML file with inline styles and base64-embedded local images.
-7. Verify facts, captions, image order, and output integrity. Open the HTML in a Chromium browser at desktop and narrow/mobile widths. Test the copy button or select the article body and paste into a disposable rich-text editor when possible. Use [references/quality-checklist.md](references/quality-checklist.md) for the final pass.
+7. Write two or three public-facing headline candidates into the front matter as repeated `title-candidate:` lines (see [references/editorial-workflow.md](references/editorial-workflow.md) §5). The builder renders them above the article with a character count and a one-click copy button, outside `article#article`, so they never enter the pasted body.
+8. Verify facts, captions, image order, and output integrity. Open the HTML in a Chromium browser at desktop and narrow/mobile widths. Test the copy button or select the article body and paste into a disposable rich-text editor when possible. Use [references/quality-checklist.md](references/quality-checklist.md) for the final pass.
 
 ## Deliverables
 
 Unless the user requests a different format, provide:
 
-- an editable Markdown draft;
-- a self-contained `*_公众号图文复制版.html` file;
+- an editable Markdown draft whose front matter carries the headline candidates;
+- a self-contained `*_公众号图文复制版.html` file, with the headline candidates listed above the article and each one copyable in a single click;
 - a folder of separately usable figure/equation/table images;
 - a short note explaining how to copy, paste, and verify the result in WeChat.
 
-Keep the visible article separate from helper controls: copy only the `<article id="article">` content, never the toolbar or image-download panel.
+Keep the visible article separate from helper controls: copy only the `<article id="article">` content, never the toolbar, the headline panel, or image-download panel.

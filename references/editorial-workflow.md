@@ -64,3 +64,23 @@ Prefer, in order:
 3. a high-resolution page crop at 200–300 DPI.
 
 Do not crop away legends, axis labels, footnotes, ↑/↓ markers, bold/underline result markers, or subfigure labels. Do not resize a table so aggressively that mobile text becomes unreadable.
+
+## 5. Headline candidates
+
+The WeChat headline is entered in the editor's own title field, so it sits outside the copied body and has to be delivered separately. Produce two or three candidates and write each one into the markdown front matter as its own `title-candidate:` line; the builder lists them above the article with a character count and a copy button.
+
+House format for this account:
+
+```
+<journal abbreviation> | <model name>：<Chinese rendering of the English subtitle>
+```
+
+- Use an ASCII pipe `|` (U+007C). Never the character 丨 (U+4E28) and never the full-width ｜ (U+FF5C).
+- Put exactly one ASCII space on each side of the pipe: `JOE | WaterDiff：…`, not `JOE|WaterDiff：…`.
+- The colon is the full-width `：`.
+- The Chinese rendering compresses the English subtitle into "modifier + task name". Do not append a generic 方法/模型 tail.
+- Journal abbreviation: take the JCR (Web of Science) abbreviation in capitals, for example `INFORM FUSION` or `IEEE J OCEANIC ENG`. IEEE journals are a known conflict — the account's earlier articles shipped community short codes such as `TMM` and `TCSVT`, which do not match the JCR style. When both readings are defensible, give one candidate per route instead of silently choosing.
+- Keep each candidate within 64 characters. The subscription feed shows only about the first 20, so the abbreviation plus model name must not consume all of them.
+- Vary the candidates rather than rewording one: one strictly following the rule, one matching the look of already-published articles, one shorter and mechanism-forward.
+
+Also draft a share summary of at most 120 characters for the delivery note. Neither the headline nor the summary belongs in the article body.

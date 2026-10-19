@@ -1,6 +1,8 @@
 ---
 browser-title: 论文公众号图文复制版
 accent-color: "#00b0f0"
+title-candidate: J TEST | ModelName：英文副标题的中译
+title-candidate: TEST SHORT | ModelName：更短的一条候选标题
 ---
 
 # English Paper Title
