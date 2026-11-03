@@ -6,10 +6,18 @@
 - The publication-timeline note sits directly under the metadata block, keeps the journal's English date labels, and reproduces the front-page dates without translating or inferring any stage.
 - Every number can be traced to the cited figure, table, or passage.
 - Dataset names, metric arrows, best/second-best markers, and method names are explained correctly.
-- Chinese author names are authoritative, not guessed.
+- Chinese author names, if used, are authoritative rather than guessed.
 - Two or three headline candidates are supplied, each following the account's `<abbreviation> | <model>：<rendering>` form and staying within 64 characters.
-- Claims preserve conditions, exceptions, and limitations.
 - No drafting placeholders, private notes, or unsupported “state-of-the-art” claims remain.
+
+## Voice
+
+- The article reads as an introduction, not a referee report: no limitations section, no evidence-boundary section, no closing list of problems.
+- Numbers are exact and the framing is neutral or positive; a losing setting is one clause, not a paragraph explaining the winner.
+- Author-stated limitations appear only as future work, without evaluation.
+- No note explaining Romanised author names or missing Chinese names.
+- No filler: every sentence carries information, captions are not restated, tautologies are cut, and adverbs do not stand in for numbers.
+- Paragraphs run three to five sentences with one claim each.
 
 ## Visual assets
 

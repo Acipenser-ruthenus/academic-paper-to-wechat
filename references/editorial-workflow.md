@@ -12,9 +12,11 @@ Resolve these fields before publication:
 - publication timeline exactly as printed on the paper front page (Received / Revised / Accepted / Available online, or IEEE's "Date of publication" and "date of current version"), with no stage inferred or back-calculated;
 - problem definition, method novelty, training/inference design;
 - datasets, baselines, metrics, best/second-best conventions;
-- limitations or conditions that narrow a claim.
+- limitations or conditions that narrow a claim — recorded on the fact sheet only, never turned into a section of the article.
 
-If a Chinese author name is not printed in an authoritative source supplied by the user, keep the Romanized name or ask the user. Never transliterate and present it as verified.
+If a Chinese author name is not printed in an authoritative source supplied by the user, keep the Romanized name or ask the user. Never transliterate and present it as verified, and do not add a note apologising for the English spelling.
+
+If the PDF is an author version with no journal header, DOI, or dates, take the venue metadata from the publisher record (IEEE Xplore shows "Date of Publication" for early-access items) and say in the delivery note where it came from. Never infer a received/accepted date from the PDF's creation timestamp.
 
 ## 2. Study the reference article
 
@@ -32,12 +34,34 @@ Match only conventions visible in the supplied reference. Do not assume that eve
 
 ## 3. Draft for a technical public audience
 
+### 3.1 Stance
+
+The account belongs to the group being written about. Treat the article as promotion and keep every judgement inside that frame.
+
+- Never add a limitations, evidence-boundary, or open-questions section, and never close with a list of criticisms.
+- Numbers stay exact; the framing stays neutral or positive. A setting the method does not win becomes 与基线各有高低 in one clause, not a paragraph on why the baseline leads.
+- Limitations the authors state themselves may be carried over as future work (轻量化、后续引入渲染先验), without comment.
+- Keep reviewer vocabulary out of the body: 证据边界、论文未解释、要打折扣、覆盖不足、没有做到全覆盖. A genuine mismatch between text and table belongs in the delivery note, for the user to raise with the authors privately.
+- Do not explain that author names are Romanised or that Chinese names are unavailable; keep them exactly as printed.
+
+### 3.2 Prose
+
+The reader is a researcher, not someone skimming a landing page. Write dense.
+
+- Delete lead-ins that announce the next sentence instead of making a claim: 值得注意、需要说明、不难看出、我们先来看、这里有两个设计选择.
+- Delete tautologies. After a clause has already implied the conclusion ("点越贴近对角线，线性相关就越高"), the sentence adds nothing.
+- Do not restate in the body what the caption already says.
+- Prefer the number to the adverb. 非常、极其、相当、明显地 usually marks a place where a value was available and unused.
+- Three to five sentences per paragraph, one claim each. Vary sentence length instead of scaffolding with 首先/其次/最后.
+- Analogies and rhetorical questions only when they shorten the explanation; no decorative metaphors.
+
+### 3.3 Content and house wording
+
 - State the research problem before module names.
 - Explain what each component changes and why it matters.
 - Keep equations only when they clarify the mechanism; add a plain-language explanation.
 - Tie claims to named datasets and metrics. Avoid “全面领先” unless the complete relevant comparison supports it.
 - Explain arrows such as ↑ and ↓ the first time metrics appear.
-- Prefer paragraphs with varied rhythm over repetitive “首先/其次/最后” scaffolding.
 - Keep technical names and casing consistent with the paper.
 - House wording for this account: label the corresponding author as 通讯作者, never 通信作者, in the `作者` metadata line and anywhere else in the Chinese copy.
 - House wording for the publication-timeline note: place one note directly under the metadata block (作者／单位／邮箱／发表期刊／DOI／引用) and state the dates in the journal's own English labels, in this form:
